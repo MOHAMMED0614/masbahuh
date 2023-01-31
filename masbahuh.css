@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'DS-Digital';
+    
+    src: url(/fonts/DS-DIGI.TTF) ;
+}
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: italic;
+    font-weight: 400;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGII.woff') format('woff');
+}
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGIB.woff') format('woff');
+}
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: italic;
+    font-weight: 700;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGIT.woff') format('woff');
+}
+
+@font-face {
+    font-family: "DS-Digital";
+    src: url("../fonts/ds-digital/DSDIGI.woff") format("woff");
+}
+#display{
+
+    /* right: 0.7em;
+    top: 0.7em;
+    font-size: 3.3em; */
+    
+    font-size: 3em;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    display: inline-block;
+  
+    font-family: 'DS-Digital', sans-serif;
+}
+
+#incrm{
+    background-color: #e3e3e3;
+    border-color: #b6b6b6 #8a8b8d #b6b6b6 #8a8b8d;
+    border-width: 5px 4px 5px 4px;
+    border-radius: 50px;
+
+}
+
+
+@media (max-width:360px)  {
+   #rest {
+    margin-top: -12.3rem;
+   }
+   #rest {
+    margin-left: 5.4rem;
+    }
+
+    #display{
+      position:absolute;
+      top: 5em;
+      right: 34vmin;
+    }
+  }
+
+  @media (max-width:376px)  {
+    #rest {
+     margin-top: -12.3rem;
+    }
+    #rest {
+     margin-left: 5.4rem;
+     }
+ 
+     #display{
+       position:absolute;
+       top: 5em;
+       right: 34vmin;
+     }
+   }
+     
+     

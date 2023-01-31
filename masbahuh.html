@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class=" bg-gradient-to-br from-purple-50 to-purple-100 h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="masbahuh.css">
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+
+
+</style> 
+    <title>مسبحة</title>
+</head>
+<body >
+
+<section class="flex justify-around mt-40 mx-2 ">
+    <div class="w-full max-w-sm  bg-purple-100  border  border-gray-200 rounded-lg shadow-md ">
+        <div class="flex justify-end px-4 pt-4 ">
+            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500  hover:bg-purple-100  focus:ring-4 focus:outline-none focus:ring-gray-200  rounded-lg text-sm p-1.5" type="button">
+                <span class="sr-only">Open dropdown</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden text-base list-none bg-purple-100  divide-y divide-gray-100 rounded shadow w-44 ">
+                <ul class="py-1" aria-labelledby="dropdownButton">
+                <li>
+                    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block px-4 py-2 text-sm text-purple-700 hover:bg-purple-100 " type="button">
+                       أضف بعض ألاذكار
+                      </button>                </li>
+            
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col items-center pb-10">
+            <img src="imgs/7.png" height="auto" width="50%" alt="">
+            <span id="display" class="   absolute right-[35vmin] md:right-[43vmin]  lg:right-[45.3vmax] lg:top-[5.2em] lg:  top-[5.2em] text-[3rem]  text-[#00000099] font-medium" >0</span>
+<div class="flex items-center justify-center">
+            <div id="incrm" class=" p-1 mt-[-7rem]  w-[4.5rem] h-[4.5rem]   lg:mt-[-6.7rem] lg:w-[5.5rem] lg:h-[5.5rem]    rounded-full  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 "></div>
+</div>
+<div class="flex items-center justify-center">
+            <div id="rest" class="p-1  ml-[5.8rem] lg:ml-[5.9rem] mt-[-13.3rem] lg:mt-[-12.6rem] lg:w-[1.9rem] lg:h-[1.9rem] w-[1.5rem] h-[1.5rem] border-4 border-gray-400    rounded-full bg-[#797878]   hover:skew-y-6  "></div>
+</div>
+          
+    </div>
+    <div id="output" class=" my-12 mb-5 text-center font-medium  text-xl text-purple-400 mx-5  text-clip overflow-hidden bg-purple-100 rounded-lg w-auto h-auto shadow-md ">
+   
+    </div>
+  
+    <div id="popup-modal"  tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+        <div class="relative w-full h-full max-w-md md:h-auto">
+            <div class="relative bg-purple-200 rounded-lg shadow">
+                <button  type="button" data-modal-toggle="popup-modal" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-hide="popup-modal">
+                    <svg   aria-hidden="true"class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center ">
+                    <div class="flex justify-center">
+                        <input type="text" id="text"   class="bg-purple-100 border text-center border-purple-300 text-purple-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block my-5 w-[60%] p-2.5 " placeholder="" required>
+                    </div>
+                    <button data-modal-toggle="popup-modal" onclick="print()" id="keap"  type="button" class="text-white bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                     حفظ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+   
+
+        <script src="masbahuh.js"></script>
+</body>
+</html>
